@@ -1,0 +1,11 @@
+echo "6 1000000000 60" > /proc/overclock/mpu_opps
+echo "5 850000000 55" > /proc/overclock/mpu_opps
+echo "4 720000000 50" > /proc/overclock/mpu_opps
+echo "3 600000000 37" > /proc/overclock/mpu_opps
+echo "2 370000000 35" > /proc/overclock/mpu_opps
+echo "1 250000000 28" > /proc/overclock/mpu_opps
+
+echo 90 > /proc/sys/vm/swappiness
+echo 50000000 > /sys/block/zram0/disksize
+mkswap /dev/block/zram0
+swapon /dev/block/zram0
