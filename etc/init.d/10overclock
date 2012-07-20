@@ -5,7 +5,3 @@ echo "3 500000000 42" > /proc/overclock/mpu_opps
 echo "2 370000000 35" > /proc/overclock/mpu_opps
 echo "1 250000000 28" > /proc/overclock/mpu_opps
 
-echo 90 > /proc/sys/vm/swappiness
-echo 50000000 > /sys/block/zram0/disksize
-mkswap /dev/block/zram0
-swapon /dev/block/zram0
